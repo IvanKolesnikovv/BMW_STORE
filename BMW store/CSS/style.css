@@ -1,0 +1,426 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+
+
+ul,
+p {
+  margin: 0%;
+  padding: 0%;
+}
+
+
+html,
+body {
+  height: 100%;
+  margin: 0%;
+  padding: 0;
+  background-color: #52616B;
+}
+
+
+/* .wrapper {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+} */
+/* 
+.main {
+  flex-grow: 1;
+} */
+
+a {
+  text-decoration: none;
+
+  position: relative;
+  color: #C9D6DF;
+  /*задаём цвет ссылки*/
+  cursor: pointer;
+  line-height: 1;
+  /*задаём высоту строки*/
+
+  /*убираем подчёркивание*/
+}
+
+a:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  /*изменить на right:0;, чтобы изменить направление подчёркивания */
+  width: 0;
+  /*задаём длинну линии до наведения курсора*/
+  height: 2px;
+  /*задаём ширину линии*/
+  background-color: #C9D6DF;
+  /*задаём цвет линии*/
+  content: "";
+  transition: width 0.3s ease-out;
+  /*задаём время анимации*/
+}
+
+a:hover:after,
+a:focus:after {
+  width: 100%;
+  /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
+/* button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+} */
+
+ul {
+  list-style: none;
+}
+
+/* main-blog {
+  padding: 150px 0;
+} */
+
+
+/* .title {
+  
+}
+
+.container {
+
+} */
+
+/* body {
+  margin: 0;
+  color: #0c1322;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: normal;
+  font-family: "Open Sans", sans-serif;
+   font-family: "Cormorant", serif;
+  position: relative;
+}
+
+ .header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 140px;
+  padding: 30px 0;
+}  */
+
+
+
+
+.header {
+  /* padding: 4vh 0%; */
+  display: flex;
+  justify-content: center;
+  height: 103px;
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid #ffffff;
+  border-bottom-color: #C9D6DF;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  position: fixed;
+  left: 10%;
+  z-index: 2;
+}
+
+.menu_inner {
+  margin: 0 39px;
+  font-family: "Montserrat", serif;
+  color: #C9D6DF;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+
+
+.header_inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 19%;
+}
+
+.account {
+  display: flex;
+  justify-content: center;
+  padding-left: 10%;
+  align-items: center;
+  font-family: "Montserrat", serif;
+  color: #C9D6DF;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+
+.shop {
+  margin: 0;
+  margin-left: 50px;
+}
+
+.logo {
+  margin-right: 23%;
+
+  margin: 0.8% 0px;
+}
+.bmw_two{
+  position: absolute;
+}
+.content1 {
+  background-image: url(/IMAGES/bmw4s.jpg);
+  width: 100%;
+  height: 92vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.midle {
+  background-color: #52616B;
+  width: 100%;
+  height: 145%;
+}
+
+.bmw8 {
+  padding: 6% 5%;
+  width: 100%;
+  height: 860px;
+  padding-bottom: 2%;
+}
+
+.back {
+  background-image: url(/IMAGES/the81.jpg);
+  width: 100%;
+  height: 720px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.text11,
+.text12,
+.text13,
+.text14,
+.text15,
+.text16 {
+  font-family: "Montserrat", serif;
+  color: #C9D6DF;
+  font-size: 42px;
+  padding-left: 7%;
+}
+
+.text11 {
+  padding-top: 2%;
+}
+
+.text12 {
+  padding-top: 1%;
+  font-size: 50px;
+}
+
+.bmw_two {
+  width: 100%;
+  height: 38%;
+  background-color: #52616B;
+
+}
+
+.bmw_two {
+  display: flex;
+  padding: 0 5%;
+
+}
+
+.first {
+  background-image: url(/IMAGES/first.jpg);
+  background-size: cover;
+  width: 50%;
+  height: 490px;
+  position: relative;
+}
+
+.two {
+  margin-left: 1%;
+  background-image: url(/IMAGES/two.jpg);
+  background-size: cover;
+  width: 50%;
+  height: 490px;
+}
+
+.text13,
+.text11,
+.text15 {
+  font-size: 48px;
+  padding-top: 2%;
+}
+
+.text14,
+.text12,
+.text16 {
+  font-size: 54px;
+}
+
+.text15,
+.text16 {
+  text-align: center;
+  padding-left: 0;
+}
+
+
+.green_bmw {
+  width: 100%;
+  height: 30%;
+  margin-top: 2%;
+  background-image: url(/IMAGES/greenbmw.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 91%;
+  position: relative;
+}
+
+.dreams {
+  font-family: "Montserrat", serif;
+  color: #F0F5F9;
+  font-size: 60px;
+  text-align: center;
+  padding-top: 1%;
+  text-transform: uppercase;
+}
+
+.button {
+  display: flex;
+  margin: 0 40%;
+  padding: 0;
+  justify-content: center;
+  position: absolute;
+  bottom: 5.5%;
+  min-width: 420px;
+  height: 83px;
+  border: 2px solid transparent;
+  border-color: #1E2022;
+  border-radius: 12px;
+  background-color: #1E2022;
+  color: #C9D6DF;
+  font-size: 30px;
+  line-height: 83px;
+  justify-content: center;
+
+}
+
+.button:hover {
+  border-bottom-width: 0;
+  border-bottom: 2px solid #C9D6DF;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.app {
+  margin-top: 6%;
+  width: 100%;
+  height: 90%;
+  background-image: url(/IMAGES/baba.jpg);
+  background-size: cover;
+}
+
+.app_text {
+  display: flex;
+  padding-left: 1.5%;
+  padding-top: 1.5%;
+}
+
+.textApp {
+  padding-left: 2%;
+  font-family: "Montserrat", serif;
+  color: #C9D6DF;
+  font-size: 56px;
+}
+
+.footer {
+  background-color: #1E2022;
+  height: 46%;
+}
+
+.ssilki,
+.menu {
+  font-family: "Open Sans", serif;
+  font-size: 32px;
+  color: #C9D6DF;
+  font-weight: 100;
+}
+
+.ssilki {
+  font-size: 24px;
+  line-height: 50px;
+}
+
+.menu {
+  padding-top: 50px;
+  padding-bottom: 5%;
+  font-weight: 300;
+}
+
+.footer_blok {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 21%;
+
+}
+
+.socials {
+  display: grid;
+  grid-template-rows: 45px;
+  grid-template-columns: 45px 45px 45px 45px;
+  min-height: 45px;
+  min-width: 45px;
+  gap: 1.25rem;
+
+  align-items: center;
+}
+
+.scale {
+  transition: transform .2s;
+
+}
+
+.scale:hover {
+  transform: scale(1.25);
+  width: 45px;
+  height: 45px;
+}
+
+.imag:hover:after,
+.imag:focus:after {
+  width: 0%;
+}
+
+.width_ {
+  min-width: 330px;
+}
+
+
+.logo:hover:after,
+.logo:focus:after {
+  width: 0%;
+}
+
+.icon:hover:after,
+.icon:focus:after {
+  width: 0%;
+
+}
+
+.icon_ {
+  transition: transform .2s;
+}
+
+.icon_:hover {
+  transform: scale(1.25);
+  width: 140px;
+  height: 140px;
+}
